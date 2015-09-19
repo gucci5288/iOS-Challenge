@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MainSceneControl.cs">
+    <Files>
+      <File FileName="Assets/MainSceneControl.cs" Line="29" Column="2" />
+      <File FileName="../thinkRobot/HackNTU/Assets/scripts/NetWork/NetWorkBase.cs" Line="1" Column="1" />
+      <File FileName="Assets/TouchLogic.cs" Line="11" Column="4" />
+      <File FileName="Assets/MenuControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Camera_virtualTouch.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
