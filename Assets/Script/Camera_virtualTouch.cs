@@ -9,7 +9,7 @@ public class Camera_virtualTouch : MonoBehaviour
 	Transform myTransform;
 
 	public Transform playerCameraPivot;
-	public float speed = 0.1f;
+	public float speed = 0.05f;
 	float rotationSpeed = 50;
 	float cameraRotationSpeed = 2.0f;
 	

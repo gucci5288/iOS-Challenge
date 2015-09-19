@@ -27,8 +27,15 @@ public class TouchLogic : MonoBehaviour
 		{
 			Debug.Log( "mouse hititem : "+ hitinfo2.collider.gameObject.name +" // point: "+hitinfo2.point);
 
+			CoffeeContainer coffeeContain = hitinfo2.collider.gameObject.GetComponent<CoffeeContainer>();
+			
+			if(coffeeContain != null)
+			{
+				MainSceneControl.instance.menu.setMenuContect(coffeeContain.GetCoffeeInfo());
+				MainSceneControl.instance.SetState(SceneState.LookMenu);
+			}
 
-			MainSceneControl.instance.SetState(SceneState.LookMenu);
+
 		}
 	}
 }

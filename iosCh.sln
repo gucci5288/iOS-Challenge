@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{8D4117F0-1C67-32D6-474A-0D227F10DBB5}") = "iosCh", "Assembly-CSharp-firstpass.csproj", "{CA2A67F4-2B9B-CD12-2A1F-239C1B63D8BC}"
+EndProject
 Project("{8D4117F0-1C67-32D6-474A-0D227F10DBB5}") = "iosCh", "Assembly-CSharp.csproj", "{3BDA6E28-520D-805E-106A-8BF0B7BD74E3}"
 EndProject
 Project("{8D4117F0-1C67-32D6-474A-0D227F10DBB5}") = "iosCh", "Assembly-CSharp-Editor.csproj", "{A529B5E7-45C8-CB50-34E1-AA1E61EEFB62}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA2A67F4-2B9B-CD12-2A1F-239C1B63D8BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2A67F4-2B9B-CD12-2A1F-239C1B63D8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2A67F4-2B9B-CD12-2A1F-239C1B63D8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2A67F4-2B9B-CD12-2A1F-239C1B63D8BC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3BDA6E28-520D-805E-106A-8BF0B7BD74E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3BDA6E28-520D-805E-106A-8BF0B7BD74E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BDA6E28-520D-805E-106A-8BF0B7BD74E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																							GlobalSection(MonoDevelopProperties) = preSolution
+																																																					GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
