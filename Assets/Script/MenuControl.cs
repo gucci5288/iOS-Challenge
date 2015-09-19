@@ -40,19 +40,18 @@ public class MenuControl : MonoBehaviour
 	public void CoffeeToJson()
 	{
 		CoffeeInfo coffee1 = new CoffeeInfo ();
-		
-	
-			coffee1.coffee_name = "Coffee 01";
-			coffee1.from = "coffee 01 Sourceland";
-			coffee1.feature = "coffee 01 Feature";
-			coffee1.story = "coffee 01 Story";
+
+		coffee1.coffee_name = "Coffee 01";
+		coffee1.from = "coffee 01 Sourceland";
+		coffee1.feature = "coffee 01 Feature";
+		coffee1.story = "coffee 01 Story";
 
 		CoffeeInfo coffee2 = new CoffeeInfo ();
 
-			coffee2.coffee_name = "Coffee 02";
-			coffee2.from = "coffee 02 Sourceland";
-			coffee2.feature = "coffee 02 Feature";
-			coffee2.story = "coffee 02 Story";
+		coffee2.coffee_name = "Coffee 02";
+		coffee2.from = "coffee 02 Sourceland";
+		coffee2.feature = "coffee 02 Feature";
+		coffee2.story = "coffee 02 Story";
 
 		CoffeeInfo coffee3 = new CoffeeInfo ();
 		
@@ -90,8 +89,7 @@ public class MenuControl : MonoBehaviour
 	}
 
 	public void OnClickBack()
-	{
-		
+	{	
 		//check if this is Menu state
 		if (MainSceneControl.instance.IsMenuNow()) 
 		{

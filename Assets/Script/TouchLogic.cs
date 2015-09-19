@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class TouchLogic : MonoBehaviour 
@@ -27,15 +27,7 @@ public class TouchLogic : MonoBehaviour
 		{
 			Debug.Log( "mouse hititem : "+ hitinfo2.collider.gameObject.name +" // point: "+hitinfo2.point);
 
-			CoffeeContainer coffeeContain = hitinfo2.collider.gameObject.GetComponent<CoffeeContainer>();
-			
-			if(coffeeContain != null)
-			{
-				MainSceneControl.instance.menu.setMenuContect(MainSceneControl.instance.menu.currentID);
-				MainSceneControl.instance.SetState(SceneState.LookMenu);
-			}
-
-
+			MainSceneControl.instance.SetState(SceneState.LookMenu);
 		}
 	}
 }

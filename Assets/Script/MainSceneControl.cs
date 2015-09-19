@@ -4,7 +4,7 @@ using System.Collections;
 public enum SceneState
 {
 	LookScene,
-	LookMenu
+	LookMenu,
 }
 
 
@@ -15,7 +15,8 @@ public class MainSceneControl : MonoBehaviour
 
 	public SceneState State = SceneState.LookScene;
 	public Camera_virtualTouch virtualTouch= null;
-	public MenuControl menu = null;
+	public GameObject MenuListUI = null;
+	public MenuControl CoffeeMenu = null;
 
 	void Start()
 	{
@@ -29,7 +30,7 @@ public class MainSceneControl : MonoBehaviour
 	
 	}	
 
-
+	
 	public bool IsMenuNow()
 	{
 		return State == SceneState.LookMenu;
@@ -47,13 +48,16 @@ public class MainSceneControl : MonoBehaviour
 
 		if (state == SceneState.LookScene) 
 		{
-			menu.gameObject.SetActive (false);
+			MenuListUI.gameObject.SetActive (false);
+
 			virtualTouch.joystickRight.gameObject.SetActive(true);
 			virtualTouch.joystickLeft.gameObject.SetActive(true);
 		} 
 		else if (state == SceneState.LookMenu) 
 		{
-			menu.gameObject.SetActive (true);
+			MenuListUI.gameObject.SetActive (true);
+			CoffeeMenu.setMenuContect(CoffeeMenu.currentID);
+
 			virtualTouch.joystickRight.gameObject.SetActive(false);
 			virtualTouch.joystickLeft.gameObject.SetActive(false);
 		}
