@@ -30,17 +30,17 @@ public class CoffeeContainer : MonoBehaviour
 
 		if (coffeeID == 1) 
 		{
-			coffee.Name = "Coffee 01";
-			coffee.Sourceland = "coffee 01 Sourceland";
-			coffee.Feature = "coffee 01 Feature";
-			coffee.Story = "coffee 01 Story";
+			coffee.coffee_name = "Coffee 01";
+			coffee.from = "coffee 01 Sourceland";
+			coffee.feature = "coffee 01 Feature";
+			coffee.story = "coffee 01 Story";
 		} 
 		else 
 		{
-			coffee.Name = "Coffee 02";
-			coffee.Sourceland = "coffee 02 Sourceland";
-			coffee.Feature = "coffee 02 Feature";
-			coffee.Story = "coffee 02 Story";
+			coffee.coffee_name = "Coffee 02";
+			coffee.from = "coffee 02 Sourceland";
+			coffee.feature = "coffee 02 Feature";
+			coffee.story = "coffee 02 Story";
 		}
 
 

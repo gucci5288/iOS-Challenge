@@ -4,13 +4,15 @@ using System;
 
 public class CoffeeInfo
 {
-	public int CoffeeID { get; set; }
-	public string Name { get; set; }
-	public string Sourceland { get; set; }
-	public string Feature	{ get; set; }
-	public string Story { get; set; }
+	public int id { get; set; }
+	public string coffee_name { get; set; }
+	public string from { get; set; }
+	public string feature	{ get; set; }
+	public string story { get; set; }
 
-	public string packageImage { get; set; }
+	public string img { get; set; }
 	
 	public int Stars { get; set; }
+
+	public int id_pos { get; set; }
 }

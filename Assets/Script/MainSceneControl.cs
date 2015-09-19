@@ -14,10 +14,10 @@ public class MainSceneControl : MonoBehaviour
 	public static MainSceneControl instance = null;
 
 	public SceneState State = SceneState.LookScene;
-
+	public Camera_virtualTouch virtualTouch= null;
 	public MenuControl menu = null;
 
-	void Awake()
+	void Start()
 	{
 		if (instance == null) 
 		{
@@ -48,10 +48,14 @@ public class MainSceneControl : MonoBehaviour
 		if (state == SceneState.LookScene) 
 		{
 			menu.gameObject.SetActive (false);
+			virtualTouch.joystickRight.gameObject.SetActive(true);
+			virtualTouch.joystickLeft.gameObject.SetActive(true);
 		} 
 		else if (state == SceneState.LookMenu) 
 		{
 			menu.gameObject.SetActive (true);
+			virtualTouch.joystickRight.gameObject.SetActive(false);
+			virtualTouch.joystickLeft.gameObject.SetActive(false);
 		}
 
 	}

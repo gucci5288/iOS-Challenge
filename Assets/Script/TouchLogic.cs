@@ -31,7 +31,7 @@ public class TouchLogic : MonoBehaviour
 			
 			if(coffeeContain != null)
 			{
-				MainSceneControl.instance.menu.setMenuContect(coffeeContain.GetCoffeeInfo());
+				MainSceneControl.instance.menu.setMenuContect(MainSceneControl.instance.menu.currentID);
 				MainSceneControl.instance.SetState(SceneState.LookMenu);
 			}
 
