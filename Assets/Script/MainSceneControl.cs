@@ -4,7 +4,8 @@ using System.Collections;
 public enum SceneState
 {
 	LookScene,
-	LookMenu,
+	LookMenuList,
+	LookMenuItem
 }
 
 
@@ -15,8 +16,9 @@ public class MainSceneControl : MonoBehaviour
 
 	public SceneState State = SceneState.LookScene;
 	public Camera_virtualTouch virtualTouch= null;
+
 	public GameObject MenuListUI = null;
-	public MenuControl CoffeeMenu = null;
+	public GameObject MenuItemUI = null;
 
 	void Start()
 	{
@@ -25,15 +27,18 @@ public class MainSceneControl : MonoBehaviour
 			instance = this;
 		}
 
-
 		SetState (SceneState.LookScene);
-	
 	}	
 
-	
-	public bool IsMenuNow()
+
+	public bool IsMenuListNow()
 	{
-		return State == SceneState.LookMenu;
+		return State == SceneState.LookMenuList;
+	}
+
+	public bool IsMenuItemNow()
+	{
+		return State == SceneState.LookMenuItem;
 	}
 
 	public bool IsSceneNow()
@@ -48,15 +53,24 @@ public class MainSceneControl : MonoBehaviour
 
 		if (state == SceneState.LookScene) 
 		{
-			MenuListUI.gameObject.SetActive (false);
+			MenuListUI.gameObject.SetActive(false);
+			MenuItemUI.gameObject.SetActive(false);
 
 			virtualTouch.joystickRight.gameObject.SetActive(true);
 			virtualTouch.joystickLeft.gameObject.SetActive(true);
 		} 
-		else if (state == SceneState.LookMenu) 
+		else if (state == SceneState.LookMenuList) 
 		{
 			MenuListUI.gameObject.SetActive (true);
-			CoffeeMenu.setMenuContect(CoffeeMenu.currentID);
+			MenuItemUI.gameObject.SetActive(false);
+
+			virtualTouch.joystickRight.gameObject.SetActive(false);
+			virtualTouch.joystickLeft.gameObject.SetActive(false);
+		}
+		else if (state == SceneState.LookMenuItem) 
+		{
+			MenuListUI.gameObject.SetActive (false);
+			MenuItemUI.gameObject.SetActive(true);
 
 			virtualTouch.joystickRight.gameObject.SetActive(false);
 			virtualTouch.joystickLeft.gameObject.SetActive(false);
